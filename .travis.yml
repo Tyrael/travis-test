@@ -20,4 +20,5 @@ before_script:
 
 # Run PHPs run-tests.php 
 script: 
+  - which php
   - php -f test.php
