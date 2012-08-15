@@ -5,7 +5,7 @@ php:
     - 5.4
 
 env:
-  - TEST_PHP_EXECUTABLE=php
+  - TEST_PHP_EXECUTABLE=/home/vagrant/.phpenv/shims/php
 
 notifications:
     email: false
@@ -20,5 +20,4 @@ before_script:
 
 # Run PHPs run-tests.php 
 script: 
-  - which php
-  - php -f test.php
+  - time php -f test.php
