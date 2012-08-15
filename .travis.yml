@@ -4,6 +4,9 @@ php:
     # We only specify one version so we only get one worker
     - 5.4
 
+env:
+  - TEST_PHP_EXECUTABLE=php
+
 notifications:
     email: false
 
