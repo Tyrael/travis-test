@@ -32,7 +32,7 @@ function php_cli_server_start($code = 'echo "Hello world";', $no_router = FALSE)
                 if (!$no_router) {
                         $cmd .= " {$router}";
                 }
-                //$cmd .= " 2>/dev/null";
+                $cmd .= " 2>/dev/null";
 
 		var_dump($cmd);
 
