@@ -3,7 +3,7 @@ define ("PHP_CLI_SERVER_HOSTNAME", "localhost");
 define ("PHP_CLI_SERVER_PORT", 8964);
 define ("PHP_CLI_SERVER_ADDRESS", PHP_CLI_SERVER_HOSTNAME.":".PHP_CLI_SERVER_PORT);
 
-//php_cli_server_start('echo "Hello world";', true);
+php_cli_server_start('echo "Hello world";', true);
 
 function php_cli_server_start($code = 'echo "Hello world";', $no_router = FALSE) {
         $php_executable = getenv('TEST_PHP_EXECUTABLE');
